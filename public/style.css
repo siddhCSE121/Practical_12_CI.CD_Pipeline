@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f7f9fc;
+    color: #2d3748;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e2e8f0;
+    overflow: hidden;
+}
+
+header {
+    background: #1a365d;
+    color: #ffffff;
+    padding: 20px 24px;
+}
+
+header h1 {
+    font-size: 1.4rem;
+    margin-bottom: 4px;
+}
+
+header p {
+    font-size: 0.85rem;
+    color: #cbd5e0;
+}
+
+/* GitHub Badge */
+.badge-container {
+    display: inline-flex;
+    border-radius: 4px;
+    overflow: hidden;
+    font-size: 0.75rem;
+    font-weight: 700;
+    font-family: monospace;
+}
+
+.badge-label {
+    background: #555555;
+    color: #ffffff;
+    padding: 4px 8px;
+}
+
+.badge-status {
+    background: #2ea44f;
+    color: #ffffff;
+    padding: 4px 8px;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px 24px;
+}
+
+@media (max-width: 768px) {
+    .grid-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 16px;
+}
+
+.card h2 {
+    font-size: 1.1rem;
+    color: #2b6cb0;
+    margin-bottom: 4px;
+}
+
+.card-desc {
+    font-size: 0.8rem;
+    color: #718096;
+    margin-bottom: 14px;
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #cbd5e0;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+input:focus {
+    border-color: #3182ce;
+    outline: none;
+}
+
+.btn {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-sm {
+    padding: 4px 8px;
+    font-size: 0.75rem;
+}
+
+.btn-primary { background: #3182ce; color: #fff; }
+.btn-primary:hover { background: #2b6cb0; }
+
+.btn-danger { background: #e53e3e; color: #fff; }
+.btn-danger:hover { background: #c53030; }
+
+.tasks-list {
+    list-style: none;
+    max-height: 220px;
+    overflow-y: auto;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+    border: 1px solid #edf2f7;
+    border-radius: 4px;
+    margin-bottom: 6px;
+    background: #fafafa;
+}
+
+/* Pipeline Flow */
+.pipeline-flow {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.stage-step {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    background: #f7fafc;
+    border: 1px solid #e2e8f0;
+}
+
+.stage-step.completed {
+    border-left: 4px solid #38a169;
+}
+
+.step-num {
+    background: #38a169;
+    color: #ffffff;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.step-sub {
+    display: block;
+    font-size: 0.75rem;
+    color: #718096;
+    font-family: monospace;
+}
+
+/* Test Results */
+.test-results-list {
+    list-style: none;
+    font-family: monospace;
+    font-size: 0.8rem;
+}
+
+.test-item {
+    padding: 6px 8px;
+    border-radius: 4px;
+    margin-bottom: 4px;
+}
+
+.test-item.passed {
+    background: #f0fff4;
+    color: #22543d;
+}
+
+footer {
+    text-align: center;
+    padding: 14px;
+    font-size: 0.8rem;
+    color: #718096;
+    border-top: 1px solid #edf2f7;
+    background: #fafafa;
+}
